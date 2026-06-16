@@ -120,7 +120,8 @@ void print_houses(figure *chart) {
   // Draw
   for (int y=0; y < cv->H; y++) {
     for (int x=0; x < cv->W; x++) {
-      putchar(cv->c[x + y*cv->W]);
+      int loc = x + y*cv->W;
+      putchar(cv->c[loc]);
     }
     putchar('\n');
   }

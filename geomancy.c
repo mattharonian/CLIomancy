@@ -59,8 +59,7 @@ int get_dot(figure fig, int dot) {
 // User flow
 void dummyInput(void) {
   printf("\nAsk a question. Press ENTER/RETURN when ready.\n\n");
-  while(getchar() != '\n') {
-  }
+  while(getchar() != '\n') {}
   putchar('\n');
 }
 
